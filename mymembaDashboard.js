@@ -281,19 +281,21 @@ document.querySelector('#templateURL').href = choiceParsed.href
 /* Save theme choice in local storage */
 
 document.querySelector('#save').addEventListener('click', (e) => {
-    if(e.path[0].value === 'sanctuary'){
+
+    console.log("Saved clicked")
+ let theme = document.querySelector('#theme').value
+    if(theme === 'sanctuary'){
     let choice = {
     name: "Sanctuary",
     desc: "The Sanctuary charity website theme has bold, dominant typography and calls-to-action. A feature-packed bronze level template that can be adapted for your brand and message.",
     srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee62cffbccd21a223dfc_6246e3d695ed2b8b6f814a81_charity_template2000x1000.jpg",
     href: "https://charity-bronze.webflow.io?edit"
 }  
-    console.log(choice) 
     let choiceStringnified = JSON.stringify(choice)
     localStorage.setItem("choice", choiceStringnified)
 }
       
-      if(e.path[0].value === 'ocean'){
+      if(theme === 'ocean'){
             let choice = {
             name: "Ocean",
             desc: "This environment focused theme can be customised to match the look and feel of your brand. Add content and images and easily connect it to MembaCRM for complete membership marketing and management.",
@@ -305,7 +307,7 @@ document.querySelector('#save').addEventListener('click', (e) => {
       localStorage.setItem("choice", choiceStringnified)
       }
     
-      if(e.path[0].value === 'wisdom'){
+      if(theme === 'wisdom'){
         let choice = {
             name: "Wisdom",
             desc: "This Wisdom theme is a gold level template that can be customised to match the look and feel of your brand. Add content and images and easily connect it to Memba CRM for complete membership marketing and management.",
@@ -317,7 +319,7 @@ document.querySelector('#save').addEventListener('click', (e) => {
       localStorage.setItem("choice", choiceStringnified)
       }
 
-      if(e.path[0].value === 'high rise'){
+      if(theme === 'high rise'){
         let choice = {
             name: "High rise",
             desc: "This elegant theme is perfect for a trade association or corporate body website. It can be customised to match the look and feel of your brand and you can easily add content and images and connect it to MembaCRM for complete membership marketing and management.",
@@ -327,7 +329,7 @@ document.querySelector('#save').addEventListener('click', (e) => {
         let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
       }
-      if(e.path[0].value === 'organic'){
+      if(theme === 'organic'){
         let choice = {
             name: "Organic",
             desc: "This theme has been designed with neutral colours and a natural, organic feel. It can be customised to match the look and feel of your brand. Add content and images and easily connect it to MembaCRM for complete membership marketing and management.",
@@ -337,7 +339,7 @@ document.querySelector('#save').addEventListener('click', (e) => {
         let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
       }
-      if(e.path[0].value === 'sophistico'){
+      if(theme === 'sophistico'){
         let choice = {
             name: "Sophistico",
             desc: "This classical theme is rich in animation and visual 'wow'. Once your own message and images are added you can present a confident impression that will help drive recruitment and strengthen your brand. Backed by a powerful CMS and optional integration to our membership portal.",
@@ -347,7 +349,7 @@ document.querySelector('#save').addEventListener('click', (e) => {
         let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
       }
-      if(e.path[0].value === 'communique'){
+      if(theme === 'communique'){
         let choice = {
             name: "Communique",
             desc: "This Communique theme can be customised to match the look and feel of your brand. Add content and images and easily connect it to MembaCRM for complete membership marketing and management.",
@@ -357,7 +359,7 @@ document.querySelector('#save').addEventListener('click', (e) => {
         let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
       }
-      if(e.path[0].value === 'cardio'){
+      if(theme === 'cardio'){
         let choice = {
             name: "Cardio",
             desc: "The Cardio health club theme brings a highly custom look and feel to your membership organisation. Easily adapted with your own colours, branding and content. Can be optionally integrated with our membership portal for a complete membership marketing and management solution.",
@@ -367,7 +369,7 @@ document.querySelector('#save').addEventListener('click', (e) => {
         let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
       }
-      if(e.path[0].value === 'astro'){
+      if(theme === 'astro'){
         let choice = {
             name: "Astro",
             desc: "The Astro theme is a sophisticated website design that can be easily adapted with your own colours, branding and content. Can be optionally integrated with our membership portal for a complete membership marketing and management solution.",
@@ -377,7 +379,7 @@ document.querySelector('#save').addEventListener('click', (e) => {
         let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
       }
-      if(e.path[0].value === 'empower'){
+      if(theme === 'empower'){
         let choice = {
             name: "Empower",
             desc: "The Empower theme is a perfect starter-template to get your business idea up and running quickly. Can be optionally integrated with our membership portal solution for complete marketing and member management solution.",
@@ -387,7 +389,7 @@ document.querySelector('#save').addEventListener('click', (e) => {
         let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
       }
-      if(e.path[0].value === 'cultivate'){
+      if(theme === 'cultivate'){
         let choice = {
             name: "Cultivate",
             desc: "The Cultivate theme is backed by a powerful CMS to help you manage events, news, team information and so much more. Combine this with our Memba CRM portal and you have an end to end marketing and member management solution",
@@ -397,7 +399,7 @@ document.querySelector('#save').addEventListener('click', (e) => {
         let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
       }
-      if(e.path[0].value === '24/7'){
+      if(theme === '24/7'){
         let choice = {
             name: "24/7",
             desc: "The 24/7 theme delivers around the clock! Working hard for your business you have instant brand impact and a template that is fully loaded with all the features and content capability that you need. Combine this with the optional Memba CRM portal and you have an end to end marketing and member management solution.",
