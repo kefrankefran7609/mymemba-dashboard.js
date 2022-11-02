@@ -287,10 +287,11 @@ document.querySelector('#save').addEventListener('click', (e) => {
     desc: "The Sanctuary charity website theme has bold, dominant typography and calls-to-action. A feature-packed bronze level template that can be adapted for your brand and message.",
     srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee62cffbccd21a223dfc_6246e3d695ed2b8b6f814a81_charity_template2000x1000.jpg",
     href: "https://charity-bronze.webflow.io?edit"
-}    console.log(choice)
+}  
+    console.log(choice) 
     let choiceStringnified = JSON.stringify(choice)
-      localStorage.setItem("choice", choiceStringnified)
-      }
+    localStorage.setItem("choice", choiceStringnified)
+}
       
       if(e.path[0].value === 'ocean'){
             let choice = {
@@ -298,8 +299,9 @@ document.querySelector('#save').addEventListener('click', (e) => {
             desc: "This environment focused theme can be customised to match the look and feel of your brand. Add content and images and easily connect it to MembaCRM for complete membership marketing and management.",
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee619780e4c6423c4163_62a891c9faab6b7ba125272e_Charity---Blue-Seas-Trust---Header.jpg",
             href: "https://charity-silver.webflow.io?edit"
-        } console.log(choice)
-            let choiceStringnified = JSON.stringify(choice)
+        } 
+      console.log(choice)
+      let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
       }
     
@@ -309,10 +311,12 @@ document.querySelector('#save').addEventListener('click', (e) => {
             desc: "This Wisdom theme is a gold level template that can be customised to match the look and feel of your brand. Add content and images and easily connect it to Memba CRM for complete membership marketing and management.",
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee619780e4cabe3c4162_62a891e97bd03be7c492ee61_Charity---Older---Header.jpg",
             href: "https://charity-gold.webflow.io?edit"
-      } console.log(choice)
-        let choiceStringnified = JSON.stringify(choice)
+      }
+      console.log(choice)
+      let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
       }
+
       if(e.path[0].value === 'high rise'){
         let choice = {
             name: "High rise",
