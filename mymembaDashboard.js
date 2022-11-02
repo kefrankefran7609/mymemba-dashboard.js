@@ -379,6 +379,7 @@ document.querySelector('#templateURL').addEventListener('click', () => {
             href: "https://united-in-digital.webflow.io?edit"
       }
     }
+      console.log(choice)
       let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
   
