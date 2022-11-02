@@ -288,6 +288,8 @@ document.querySelector('#save').addEventListener('click', (e) => {
     srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee62cffbccd21a223dfc_6246e3d695ed2b8b6f814a81_charity_template2000x1000.jpg",
     href: "https://charity-bronze.webflow.io?edit"
 }
+    let choiceStringnified = JSON.stringify(choice)
+      localStorage.setItem("choice", choiceStringnified)
       }
       
       if(e.path[0].value === 'ocean'){
@@ -296,7 +298,9 @@ document.querySelector('#save').addEventListener('click', (e) => {
             desc: "This environment focused theme can be customised to match the look and feel of your brand. Add content and images and easily connect it to MembaCRM for complete membership marketing and management.",
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee619780e4c6423c4163_62a891c9faab6b7ba125272e_Charity---Blue-Seas-Trust---Header.jpg",
             href: "https://charity-silver.webflow.io?edit"
-        }    
+        } 
+            let choiceStringnified = JSON.stringify(choice)
+      localStorage.setItem("choice", choiceStringnified)
       }
     
       if(e.path[0].value === 'wisdom'){
@@ -306,6 +310,8 @@ document.querySelector('#save').addEventListener('click', (e) => {
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee619780e4cabe3c4162_62a891e97bd03be7c492ee61_Charity---Older---Header.jpg",
             href: "https://charity-gold.webflow.io?edit"
       }
+        let choiceStringnified = JSON.stringify(choice)
+      localStorage.setItem("choice", choiceStringnified)
       }
       if(e.path[0].value === 'high rise'){
         let choice = {
@@ -314,6 +320,8 @@ document.querySelector('#save').addEventListener('click', (e) => {
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee649453b122cf17e152_6246e4cf9f6a64232f39b157_business2_template2000x1000.jpg",
             href: "https://trade-association-bronze.webflow.io?edit"
       }
+        let choiceStringnified = JSON.stringify(choice)
+      localStorage.setItem("choice", choiceStringnified)
       }
       if(e.path[0].value === 'organic'){
         let choice = {
@@ -322,6 +330,8 @@ document.querySelector('#save').addEventListener('click', (e) => {
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee60a7f9d3e9f9d35704_62a790e2e8859c88f9d91882_NFP---homepage-1.jpg",
             href: "https://trade-association-nfp.webflow.io?edit"
       }
+        let choiceStringnified = JSON.stringify(choice)
+      localStorage.setItem("choice", choiceStringnified)
       }
       if(e.path[0].value === 'sophistico'){
         let choice = {
@@ -330,6 +340,8 @@ document.querySelector('#save').addEventListener('click', (e) => {
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee62a2ae4feb3ce8ff41_62a79102453f14037b12ff09_NFP---homepage-1.jpg",
             href: "https://heritage-arts-and-crafts-association.webflow.io?edit"
       }
+        let choiceStringnified = JSON.stringify(choice)
+      localStorage.setItem("choice", choiceStringnified)
       }
       if(e.path[0].value === 'communique'){
         let choice = {
@@ -338,6 +350,8 @@ document.querySelector('#save').addEventListener('click', (e) => {
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635ffe1de8ccd34959cd1735_6248c3590c16fc38b4c808b5_Homepage%20(header).jpg",
             href: "https://club-or-society-bronze.webflow.io?edit"
       }
+        let choiceStringnified = JSON.stringify(choice)
+      localStorage.setItem("choice", choiceStringnified)
       }
       if(e.path[0].value === 'cardio'){
         let choice = {
@@ -346,6 +360,8 @@ document.querySelector('#save').addEventListener('click', (e) => {
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee61a2ae4ff145e8ff3f_62a791730281d33015d8f1dd_Premier-Fitness---home.jpg",
             href: "https://club-or-society-silver.webflow.io?edit"
       }
+        let choiceStringnified = JSON.stringify(choice)
+      localStorage.setItem("choice", choiceStringnified)
       }
       if(e.path[0].value === 'astro'){
         let choice = {
@@ -354,6 +370,8 @@ document.querySelector('#save').addEventListener('click', (e) => {
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee61d17a753d259e16d3_62a79228fc0436b7497ab405_The-British-Science-Society---homepage-1.jpg",
             href: "https://the-british-science-society.webflow.io?edit"
       }
+        let choiceStringnified = JSON.stringify(choice)
+      localStorage.setItem("choice", choiceStringnified)
       }
       if(e.path[0].value === 'empower'){
         let choice = {
@@ -362,6 +380,8 @@ document.querySelector('#save').addEventListener('click', (e) => {
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/635fee6211929eabf826c802_6246d8c03ba32ce60f491096_business_template-hero2000x1000.jpg",
             href: "https://business-bronze.webflow.io?edit"
       }
+        let choiceStringnified = JSON.stringify(choice)
+      localStorage.setItem("choice", choiceStringnified)
       }
       if(e.path[0].value === 'cultivate'){
         let choice = {
@@ -370,6 +390,8 @@ document.querySelector('#save').addEventListener('click', (e) => {
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/6360000a58845206075cb7f1_organic.png",
             href: "https://organic-fruit-growers-network.webflow.io?edit"
       }
+        let choiceStringnified = JSON.stringify(choice)
+      localStorage.setItem("choice", choiceStringnified)
       }
       if(e.path[0].value === '24/7'){
         let choice = {
@@ -378,11 +400,9 @@ document.querySelector('#save').addEventListener('click', (e) => {
             srcset: "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/636000a89dec1d223ade819a_uid.png",
             href: "https://united-in-digital.webflow.io?edit"
       }
-    }
-      console.log(choice)
-      let choiceStringnified = JSON.stringify(choice)
+        let choiceStringnified = JSON.stringify(choice)
       localStorage.setItem("choice", choiceStringnified)
-  
+      }  
 })
 
   
