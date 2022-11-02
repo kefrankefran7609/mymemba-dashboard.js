@@ -280,7 +280,7 @@ document.querySelector('#templateURL').href = choiceParsed.href
 
 /* Save theme choice in local storage */
 
-document.querySelector('#templateURL').addEventListener('click', () => {
+document.querySelector('#save').addEventListener('click', () => {
     if(e.path[0].value === 'sanctuary'){
     let choice = {
     name: "Sanctuary",
