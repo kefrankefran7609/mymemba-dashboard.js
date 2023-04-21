@@ -194,7 +194,8 @@ theme.addEventListener("change", (e) => {
                 "The 24/7 theme delivers around the clock! Working hard for your business you have instant brand impact and a template that is fully loaded with all the features and content capability that you need. Combine this with the optional Memba CRM portal and you have an end to end marketing and member management solution."),
             (srcset.srcset = "https://uploads-ssl.webflow.com/61a536674b8681e731f458ee/636000a89dec1d223ade819a_uid.png"));
 }),
-    document.querySelector('[w-el="requestEditor"]').addEventListener("click", (e) => {
+    document.querySelectorAll('[w-el="requestEditor"], [w-el="requestThemeChange"]').forEach((el) => {
+    el.addEventListener("click", (e) => {
         let theme = document.querySelector("#theme").value;
         if ("sanctuary" === theme) {
             let choice = {
@@ -313,3 +314,4 @@ theme.addEventListener("change", (e) => {
             (choiceStringnified = JSON.stringify(choice)), localStorage.setItem("choice", choiceStringnified);
         }
     });
+})
